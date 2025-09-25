@@ -1,4 +1,4 @@
-# Microarray-Analysis-in-R
+# Microarray Analysis in R
 Analysis of the ImmGen Microarray Phase 2 dataset (GSE37448) from Mus musculus, exploring gene-expression profiles of immune cells using Affymetrix Mouse Gene 1.0 ST arrays.
 
 
