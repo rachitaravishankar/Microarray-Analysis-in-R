@@ -1,5 +1,5 @@
 ####Set Working Directory####
-setwd("/Users/rachitaravishankar/Desktop/RACHITA/GSE37448")
+setwd("./GSE37448")
 
 ####Install and Load Packages####
 ######General Bioconductor packages#####
@@ -75,7 +75,7 @@ filePaths <- getGEOSuppFiles('GSE37448')
   # Download the RAW file on command line -  curl -O ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE37nnn/GSE37448/suppl/GSE37448_RAW.tar
   # Unzip the RAW file - tar -xvf GSE37448_RAW.tar
 
-cel_dir <- "/Users/rachitaravishankar/Desktop/RACHITA/GSE37448/GSE37448_CEL"
+cel_dir <- "./GSE37448/GSE37448_CEL"
 
 cel_files <- list.celfiles(cel_dir, full.names = TRUE)
 length(cel_files)
@@ -721,9 +721,7 @@ ggplot(go_df, aes(x = ratio, y = Term, size = Significant, color = -log10(pvalue
   ggtitle("GO Enrichment Bubble Plot") +
   theme_minimal()
 
-# cluster profile
-
-
+# optional
 topGO_MF <- run_topGO("MF")
 topGO_CC <- run_topGO("CC")
   
@@ -731,7 +729,7 @@ topGO_CC <- run_topGO("CC")
 #### Immgen Dataset Analysis ####
 # Following : https://bioconductor.org/packages/release/workflows/vignettes/maEndToEnd/inst/doc/MA-Workflow.html
 ###### Load data #####
-GSE37448_Normalized_Data <- read.csv("~/Desktop/RACHITA/GSE37448/GSE37448_Normalized_Data.csv")
+GSE37448_Normalized_Data <- read.csv("~GSE37448/GSE37448_Normalized_Data.csv")
 View(GSE37448_Normalized_Data)
 
 head(GSE37448_Normalized_Data)
@@ -784,7 +782,3 @@ ggplot(umap_df, aes(x = UMAP1, y = UMAP2)) +
 sample_names <- as.data.frame(colnames(immgen_data))
 colnames(sample_names) <- 'Samples'
 head(sample_names, 20)
-
-
-
-save.image(file = "my_workspace.RData")
