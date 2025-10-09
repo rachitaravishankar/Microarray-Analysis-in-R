@@ -140,7 +140,7 @@ ggplot(dataGG, aes(PC1, PC2)) +
   scale_color_manual(values = my_colors)
 
 ##### Statistical Tests####
-# https://dputhier.github.io/ASG/practicals/microarrays_student_test/DenBoer_Student_test.html#student_test_and_p-value
+# Following : https://dputhier.github.io/ASG/practicals/microarrays_student_test/DenBoer_Student_test.html#student_test_and_p-value
 
 ###### Mean Expression ####
 
