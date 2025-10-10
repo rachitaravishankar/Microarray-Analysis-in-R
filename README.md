@@ -25,11 +25,16 @@ The data has been used to explore how the tumor microenvironment shapes transcri
 GSE37448 : https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE37448
 
 # Planned Analysis
+Analysis is performed on two datasets : series matrix file and dataset deposited in the Immgen website.
 
-- Quality control of CEL files (R/Bioconductor: oligo, affy)
+For the raw series matrix file the following steps are followed - 
+- Quality control of CEL files
 - Normalization (RMA)
 - Differential expression analysis (limma)
 - Enrichment Analysis (Gene Ontology based)
+
+For the immgen dataset the following steps are followed - 
+- Dimensionalty Reduction
 
 # References
 
