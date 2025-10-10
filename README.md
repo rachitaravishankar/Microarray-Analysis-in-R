@@ -28,7 +28,7 @@ GSE37448 : https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE37448
 Analysis is performed on two datasets : series matrix file and dataset deposited in the Immgen website.
 
 For the raw series matrix file the following steps are followed - 
-- Quality control of CEL files
+- Quality control
 - Normalization (RMA)
 - Differential expression analysis (limma)
 - Enrichment Analysis (Gene Ontology based)
